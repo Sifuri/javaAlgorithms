@@ -1,5 +1,4 @@
 /*
- * @Author Wayne A. Tatum, Jr.
  * @Date   May 2, 2013
  * 
  * Program that creates a class and stores the total 
