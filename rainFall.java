@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-/*
+/* @author Lemuel M. Uhuru
  * @Date   May 2, 2013
+ * Book Title: From Control Structures through Objects by Tony Gaddis 
+ * Page: 490 Problem 1 
  * 
  * Program that creates a class and stores the total 
  * rainfall for each 12 months into an array of doubles 
