@@ -18,11 +18,19 @@ public class rainFall {
 		double[] monthlyRain = new double[SIZE];
 		
 		System.out.println("Enter the monthly rain fall amount: ");
-		for(int i = 0; i < SIZE; i++){
-			System.out.print("Month " + (i+1) + ": ");
-			monthlyRain[i] = keyboard.nextDouble();
-		}	
+		int i = 0;
 		
+		// Added input validation with 'Do-While Loop'
+		for(i = 0; i < SIZE; i++){
+			
+			do{
+				System.out.print("Month " + (i+1) + ": ");
+				monthlyRain[i] = keyboard.nextDouble();
+			}
+			while(monthlyRain[i] < 0);
+			
+		}		
+	
 		System.out.println("The annual sum of rain: " + sumRain(monthlyRain));
 		System.out.println("The average sum of rain: " + averageRain(monthlyRain));
 		System.out.println("The most amount of rain fall: " + mostRain(monthlyRain));
