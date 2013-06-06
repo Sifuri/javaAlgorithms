@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 5, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 187 Problem 2
+ * Page: 187 Problem 2: Magic Dates
  * 
  * Program that asks the user to enter a month (in numeric form), 
  * a day, and a two digit year. The program should then determine 

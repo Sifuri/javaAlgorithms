@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 4, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 187 Problem 1 
+ * Page: 187 Problem 1: Roman Numerals
  * 
  * Program that prompts the user to enter a number within the range
  * of 1 through 10. Program should display the Roman numeral version 
