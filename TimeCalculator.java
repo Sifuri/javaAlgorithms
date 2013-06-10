@@ -17,7 +17,7 @@ public class TimeCalculator {
 	
 	public static void main(String[] args) {
 		// Declare number constants to hold time values in seconds
-		int MINUTE = 60;
+		int MIN = 60;
 		int HOUR = 3600;
 		int DAY = 86400;
 		
@@ -38,19 +38,19 @@ public class TimeCalculator {
 		// minutes, hours, or days based on the number of 
 		// seconds chosen by the user.
 	
-		if (seconds < 86400){
-			if (seconds >= 3600){
-				JOptionPane.showMessageDialog(null, (seconds/3600) + " hours " + ((seconds%3600)/60) + 
-													" minutes and " + ((seconds%3600)%60) + " seconds.");
+		if (seconds < DAY){
+			if (seconds >= HOUR){
+				JOptionPane.showMessageDialog(null, (seconds/HOUR) + " hours " + ((seconds%HOUR)/MIN) + 
+													" minutes and " + ((seconds%HOUR)%MIN) + " seconds.");
 			}
-			else if(seconds >= 60){
+			else if(seconds >= MIN){
 				JOptionPane.showMessageDialog(null, seconds + " seconds is equal to " + 
-								seconds/60 + " minutes and " + seconds%60 + " seconds.");
+								seconds/MIN + " minutes and " + seconds%MIN + " seconds.");
 			}
 		}
 		else{
-			JOptionPane.showMessageDialog(null, (seconds/86400) + " days " + (seconds%86400)/3600 + " hours " +
-											((seconds%86400)%3600)/60 + " minutes " +  ((seconds%86400)%3600)%60 + 
+			JOptionPane.showMessageDialog(null, (seconds/DAY) + " days " + (seconds%DAY)/HOUR + " hours " +
+											((seconds%DAY)%HOUR)/MIN + " minutes " +  ((seconds%DAY)%HOUR)%MIN + 
 											" seconds.");
 		}
 
