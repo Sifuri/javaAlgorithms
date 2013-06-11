@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 6, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 187 Problem 3: Body Mass Index
+ * Page: 189 Problem 3: Body Mass Index
  * 
  * @Description Write a program that calculates and displays 
  * 	a persons body mass index (BMI). A person BMI is calculated

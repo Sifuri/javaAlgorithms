@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 9, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 187 Problem 6: TimeCalculator
+ * Page: 189 Problem 6: TimeCalculator
  * 
  * @Description Write a program that asks the user to enter
  * a number of seconds. Design a decision structure to return

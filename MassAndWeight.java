@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 8, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 187 Problem 5: Mass and Weight
+ * Page: 189 Problem 5: Mass and Weight
  * 
  * @Description Write a program that asks the user to enter
  * an objects mass, and then calculate it's weight using the 

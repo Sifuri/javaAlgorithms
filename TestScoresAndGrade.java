@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 7, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 187 Problem 4: Test Score and Grade
+ * Page: 189 Problem 4: Test Score and Grade
  * 
  * @Description Write a program that calculates the average of
  * three user test scores, then display the average and a letter 
