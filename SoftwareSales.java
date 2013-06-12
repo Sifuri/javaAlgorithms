@@ -1,7 +1,7 @@
 import javax.swing.JOptionPane;
 
 /**@author Lemuel M. Uhuru
- * @Date   June 5, 2013
+ * @Date   June 11, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
  * Page: 189 Problem 8: Software Sales
  * 
