@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * 
  * @Description Write a program that asks the user to 
  * enter the weight of a package and then displays the 
- * shipping charges.
+ * shipping charges rated per 500 miles.
  */
 public class ShippingCharges {
 
