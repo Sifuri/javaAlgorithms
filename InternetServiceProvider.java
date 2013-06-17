@@ -45,7 +45,6 @@ public class InternetServiceProvider {
 		// Design switch statement with nested if-else structures
 		// to display the appropriate total charges.
 		
-		
 		switch (userPackage){
 		case 'A':
 			if(hours > 10)
@@ -54,7 +53,7 @@ public class InternetServiceProvider {
 				JOptionPane.showMessageDialog(null, "Package: " + userPackage + "\nTotal Charges: $" + priceA);
 			break;
 		case 'B':
-			if(hours > 10)
+			if(hours > 20)
 				JOptionPane.showMessageDialog(null, "Package: " + userPackage + "\nTotal Charges: $" + totalChargesB);
 			else
 				JOptionPane.showMessageDialog(null, "Package: " + userPackage + "\nTotal Charges: $" + priceB);
