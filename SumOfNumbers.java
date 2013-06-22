@@ -16,6 +16,7 @@ public class SumOfNumbers {
 	public static void main(String[] args) {
 		// Declare variable to hold user input
 		int num;
+		
 		// Prompt user for positive nonzero integer value and store in variable.
 		String input1 = JOptionPane.showInputDialog("Enter a positive nonzero integer");
 		
@@ -26,9 +27,11 @@ public class SumOfNumbers {
 		int sum = 0;
 		
 		// Construct for loop to obtain the sum of integers from 1 up to the users input.
-		while(num > 1){
+		while(num >= 1){
+			sum += num;
 			num--;
 		}
+		JOptionPane.showMessageDialog(null, sum);
 		
 	}
 }
