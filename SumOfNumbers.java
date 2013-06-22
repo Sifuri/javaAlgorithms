@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 /**@author Lemuel M. Uhuru
  * @Date   June 20, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 266 Challenge: Sum of Numbers
+ * Page: 266 Challenge 1: Sum of Numbers
  * 
  * @Description Write a program that asks the user for a positive nonzero
  * integer value. The program should use a loop to get the sum of all the
@@ -31,7 +31,7 @@ public class SumOfNumbers {
 			sum += num;
 			num--;
 		}
-		JOptionPane.showMessageDialog(null, sum);
+		JOptionPane.showMessageDialog(null, "Sum: " + sum);
 		
 	}
 }
