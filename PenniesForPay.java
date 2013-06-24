@@ -35,6 +35,12 @@ public class PenniesForPay {
 		System.out.print("Enter the number of days worked: ");
 		numDays = keyboard.nextInt();
 		
+		// Input validation: Input must not be less than 1
+	    while (numDays < 1){
+	    	System.out.print("Enter the number of days worked: ");
+			numDays = keyboard.nextInt();
+	    }
+		
 		// Display table header
 		System.out.println("Day  " + "   Salary     " + "Total Salary");
 		
