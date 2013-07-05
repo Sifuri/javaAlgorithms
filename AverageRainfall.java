@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.text.*;
 
 /* @author Lemuel M. Uhuru
- * @Date   May 4, 2013
+ * @Date   July 4, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
  * Page: 268 Challenge 8 Average Rainfall
  * 
