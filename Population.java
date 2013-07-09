@@ -23,15 +23,37 @@ public class Population {
 		double increaseRate = 0;									    // Daily population increase percentage
 		double population = organisms + (organisms * increaseRate);	    // Calculate population after increase
 		
+		System.out.print("Number of days to multiply: ");
 		days  = input.nextInt();										// Prompt user for the number of days
+		
+		while(days < 1){
+			System.out.print("Invalid entry. Re-enter a value greater than 0: ");
+			days  = input.nextInt();
+		}
+		
+		System.out.print("Number of organisms: ");
 		organisms = input.nextDouble();									// Prompt user for the amount of organisms
+		
+		while( organisms < 2){											// Input validation
+			System.out.print("Ivalid entry. Re-enter a value greater than 1: ");
+			organisms = input.nextDouble();	
+		}
+		
+		System.out.print("Percentage of increase: ");
 		increaseRate = input.nextDouble();								// Prompt user for the rate of increase in percentage
 		
-		System.out.println("Day" +"Population" + "Percent of Increase");
-		System.out.println("------------------------------------------");
+		while( increaseRate < 0){										// Input validation
+			System.out.print("Ivalid entry. Re-enter a non-negative value: ");
+			increaseRate = input.nextDouble();	
+		}
 		
-		for(int i=0; i<days; i++){
-			
+		System.out.println(""); // Newline
+		
+		System.out.println("Day" +"       Population" + "       Percent of Increase");	
+		System.out.println("_______________________________________________");
+		
+		for(int i=1; i<days + 1; i++){
+			System.out.println("  " +i + "           " + organisms + "                " + increaseRate);
 		}
 	}
 }
