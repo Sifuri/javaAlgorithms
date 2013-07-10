@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.io.*;
+import java.text.*;
 
 /**@author Lemuel M. Uhuru
  * @Date   July 9, 2013
@@ -18,10 +18,12 @@ public class Population {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);							// Create Scanner object
+		NumberFormat df = DecimalFormat.getInstance();					// Decimal formatting
+	    df.setMaximumFractionDigits(2);
 		int days;														// Store the number of days to multiple the population
 		double organisms = 0;										    // Store number of organism		
 		double increaseRate = 0;									    // Daily population increase percentage
-		double population = organisms + (organisms * increaseRate);	    // Calculate population after increase
+		double population = 0;	   									    // Calculate population after increase
 		
 		System.out.print("Number of days to multiply: ");
 		days  = input.nextInt();										// Prompt user for the number of days
@@ -32,17 +34,17 @@ public class Population {
 		}
 		
 		System.out.print("Number of organisms: ");
-		organisms = input.nextDouble();									// Prompt user for the amount of organisms
+		organisms = input.nextDouble();										// Prompt user for the amount of organisms
 		
-		while( organisms < 2){											// Input validation
+		while( organisms < 2){												// Input validation
 			System.out.print("Ivalid entry. Re-enter a value greater than 1: ");
 			organisms = input.nextDouble();	
 		}
 		
 		System.out.print("Percentage of increase: ");
-		increaseRate = input.nextDouble();								// Prompt user for the rate of increase in percentage
+		increaseRate = input.nextDouble()/100;								// Prompt user for the rate of increase in percentage
 		
-		while( increaseRate < 0){										// Input validation
+		while( increaseRate < 0){											// Input validation
 			System.out.print("Ivalid entry. Re-enter a non-negative value: ");
 			increaseRate = input.nextDouble();	
 		}
@@ -51,9 +53,10 @@ public class Population {
 		
 		System.out.println("Day" +"       Population" + "       Percent of Increase");	
 		System.out.println("_______________________________________________");
-		
-		for(int i=1; i<days + 1; i++){
-			System.out.println("  " +i + "           " + organisms + "                " + increaseRate);
+		System.out.println("  1           " + df.format(organisms));
+		for(int i=2; i<days + 1; i++){
+			organisms += (organisms *= increaseRate);
+			System.out.println("  " +i + "           " + df.format(organisms) + "                " + (increaseRate*100)+"%");
 		}
 	}
 }
