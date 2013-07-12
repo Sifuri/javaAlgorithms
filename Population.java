@@ -4,7 +4,7 @@ import java.text.*;
 /**@author Lemuel M. Uhuru
  * @Date   July 9, 2013
  * Book Title: From Control Structures through Objects by Tony Gaddis 
- * Page: 268 Challenge 6: Population
+ * Page: 268 Challenge 9: Population
  * 
  * @Description Write a program that will predict the size of a population
  * of organisms. The program should ask for the starting number of organisms,
