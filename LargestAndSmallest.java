@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.text.*;
 
 /**@author Lemuel M. Uhuru
  * @Date   July 12, 2013

@@ -23,7 +23,7 @@ public class Population {
 		int days;														// Store the number of days to multiple the population
 		double organisms = 0;										    // Store number of organism		
 		double increaseRate = 0;									    // Daily population increase percentage
-		double population = 0;	   									    // Calculate population after increase
+		
 		
 		System.out.print("Number of days to multiply: ");
 		days  = input.nextInt();										// Prompt user for the number of days
