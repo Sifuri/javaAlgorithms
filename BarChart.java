@@ -20,7 +20,7 @@ public class BarChart {
 		// Create Scanner object
 		Scanner input = new Scanner(System.in);
 		
-		// Store store sales
+		// Store sales
 		
 		int sales = 0;
 		
