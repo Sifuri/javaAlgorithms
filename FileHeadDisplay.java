@@ -26,8 +26,18 @@ public class FileHeadDisplay {
 		
 		// Open file
 		File file = new File(fileName + ".txt");
+		
+		// Ensure that file exist
+		if(!file.exists()){
+			System.out.println("The file " + fileName + ".txt does not exist.");
+			System.exit(0);
+		}
+	
+		// Instantiate scanner with file
 		Scanner inputFile = new Scanner(file);
 		
+	
+
 		// Line
 		String line;
 		
@@ -35,16 +45,11 @@ public class FileHeadDisplay {
 		int counter = 0;
 		
 		// While loop
-		while(counter <= 5){
+		while(inputFile.hasNext()){
 			line = inputFile.nextLine();
-			if(inputFile.hasNext()){
+			if(counter < 5)
 				System.out.println(line);
-				counter += 1;
-			}
-			else{
-				System.out.println(line);
-				counter += 1;
-			}
+			counter += 1;
 		}
 		// Close file
 		inputFile.close();
